@@ -17,7 +17,14 @@ for the SiC calculations are:
 3f1f0de1773bf99d1cdbe96011ea23d7  ./mean_field/SiC/WFN_inner
 5a49db5b0b97602a523fdc051da5836c  ./mean_field/SiC/WFNq.h5
 ```
-and the files you will need for the Si214 calculations are TODO
+and the files you will need for the Si214 calculations are
+```
+83526815d8a53cebb7ed08e54bd20637  ./mean_field/Si214/RHO
+b834da576a1b8fd9ddf195495fbc3db4  ./mean_field/Si214/VXC
+f895468482834628e50db7f64f6f7827  ./mean_field/Si214/WFN.h5
+de22f4d48dfcc4a2fd8949173e9a8ef7  ./mean_field/Si214/WFN_inner
+dcf016ca900cf1ec6c1a6c3b4ee9a78f  ./mean_field/Si214/WFNq.h5
+```
 
 ### SiC\_GPP
 
@@ -41,7 +48,7 @@ Si 214-atom supercell, computing the static inverse dielecric matrix in Epsilon
 and using the Generalized Plasmon Pole (GPP) model for the inverse dielectric
 matrix in Sigma.
 
-This calculation is intended to run in ~minutes for full utilization of a 
+This calculation is intended to run in ~minutes for full utilization of a
 Summit-sized nodes.
 
 ### Si214\_FF
@@ -50,7 +57,7 @@ Si 214-atom supercell, computing the full frequency dependent inverse dielectric
 matrix in Epsilon and using the Full Frequency (FF) model for the inverse
 dielectric matrix in Sigma.
 
-This calculation is intended to run in ~minutes for full utilization of a 
+This calculation is intended to run in ~minutes for full utilization of a
 Summit-sized nodes.
 
 ## Running
