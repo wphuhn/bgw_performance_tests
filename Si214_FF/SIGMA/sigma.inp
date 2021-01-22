@@ -1,0 +1,45 @@
+# 
+degeneracy_check_override
+
+# In case you want to change the number of bands to be multiple of MPIxPool
+# number_bands  21800
+
+# original range
+band_index_min   425
+band_index_max   434
+
+exact_static_ch 1
+screening_semiconductor
+
+# dont_use_hdf5
+
+frequency_dependence         2
+frequency_dependence_method  2
+
+cell_average_cutoff  1.0 
+
+number_kpoints  1
+begin kpoints
+    0.000000    0.000000    0.000000  1.00
+end
+               
+dont_use_vxcdat
+
+dont_check_norms
+
+#### In case you want to use pool
+number_sigma_pools  8
+
+do_sigma_subspace
+
+# Old time GB flags :(
+# use_zgemm_sigma
+# #### to use the new algorithm
+# comm_nonblocking_cyclic
+# #### If reading the epsmat goes out of memory or it's too slow try this
+# #### 1000 is the blocking factor in reading epsmat
+# sub_read_bcast
+# sub_read_bcast_bsize  50
+# read_dist_epsmat
+# pe_block_size  2
+

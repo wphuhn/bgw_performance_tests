@@ -1,0 +1,37 @@
+epsilon_cutoff       8.0
+
+# number_bands 3000
+
+begin qpoints
+  0.0 0.0 0.05  1.0  1
+end
+
+# Comment this line if running out of memory
+os_opt_ffts 0
+
+# Read from WFN.h5 and WFNq.h5. Only supported by Epsilon.
+# dont_use_hdf5
+os_hdf5
+
+frequency_dependence  0
+#frequency_dependence_method  2
+#frequency_low_cutoff  10d0
+#delta_frequency  2.5d0
+#broadening 0.1
+#number_imaginary_freqs  5
+
+#eps_trunc_eigen               1.0E-3
+#nbasis_subspace               3500
+#subspace_dont_keep_full_eps_omega0
+#write_subspace_epsinv
+#subspace_use_elpa
+
+# We use pseudobands, so we can't check norms
+dont_check_norms
+
+comm_nonblocking_cyclic
+
+mpi_tasks_per_device  5
+cuda_use_wfn_pinned_memory
+cuda_host_mem  47000
+cuda_scale_mem  0.85

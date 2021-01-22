@@ -3,6 +3,7 @@ include ../make.sys
 export MPI_CMD
 export EPS_EXE
 export SIG_EXE
+export MF_DIR=${PWD}/../mean_field/SiC
 
 .PHONY: all gw epsilon sigma clean
 
