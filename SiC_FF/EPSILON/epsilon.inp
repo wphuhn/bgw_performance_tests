@@ -1,0 +1,55 @@
+epsilon_cutoff  20.0
+
+number_bands      80
+degeneracy_check_override
+
+full_chi_conv_log       -1
+
+os_hdf5
+
+# eps_trunc_eigen               1.0E-2
+# nbasis_subspace               40
+# subspace_use_elpa
+# subspace_dont_keep_full_eps_omega0
+# write_subspace_epsinv
+# dont_keep_fix_buffers
+# sub_collective_eigen_redistr
+
+os_opt_ffts   0
+
+frequency_dependence          2
+frequency_dependence_method   2
+number_imaginary_freqs        10
+broadening                    0.1
+delta_frequency               0.5
+delta_frequency_step          1.0
+frequency_low_cutoff         10.0
+
+# nfreq_group  3
+
+eps_trunc_eigen               1.0E-2
+nbasis_subspace               200
+write_subspace_epsinv
+subspace_use_elpa
+ 
+begin qpoints
+     0.000000    0.000000   0.001  1.00  1
+      0.000000    0.000000    0.333333  1.00  0
+      0.000000    0.000000    0.666667  1.00  0
+      0.000000    0.333333    0.333333  1.00  0
+      0.000000    0.333333    0.666667  1.00  0
+end
+
+comm_nonblocking_cyclic
+
+# # mpi_tasks_per_device   1
+# cuda_use_wfn_pinned_memory
+# cuda_scale_mem  0.75
+# cuda_host_mem   48000
+
+#      0.000000    0.000000   0.001  1.00  1
+#      0.000000    0.000000    0.333333  1.00  0
+#      0.000000    0.000000    0.666667  1.00  0
+#      0.000000    0.333333    0.333333  1.00  0
+#      0.000000    0.333333    0.666667  1.00  0
+

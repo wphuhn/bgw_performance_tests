@@ -1,0 +1,29 @@
+epsilon_cutoff  20.0
+
+number_bands      80
+degeneracy_check_override
+
+full_chi_conv_log       -1
+
+os_hdf5
+
+# eps_trunc_eigen               1.0E-2
+# nbasis_subspace               40
+# subspace_use_elpa
+# subspace_dont_keep_full_eps_omega0
+# write_subspace_epsinv
+# dont_keep_fix_buffers
+# sub_collective_eigen_redistr
+
+os_opt_ffts   0
+ 
+begin qpoints
+     0.000000    0.000000   0.001  1.00  1
+      0.000000    0.000000    0.333333  1.00  0
+      0.000000    0.000000    0.666667  1.00  0
+      0.000000    0.333333    0.333333  1.00  0
+      0.000000    0.333333    0.666667  1.00  0
+end
+
+comm_nonblocking_cyclic
+

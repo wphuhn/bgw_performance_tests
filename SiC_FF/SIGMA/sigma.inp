@@ -1,0 +1,37 @@
+screened_coulomb_cutoff  20.0
+
+number_bands      80
+# band_occupation   4*1  77*0
+degeneracy_check_override
+
+band_index_min  2
+band_index_max  8
+
+exact_static_ch  1
+screening_semiconductor
+
+frequency_dependence         2
+frequency_dependence_method  2
+
+no_symmetries_q_grid
+
+number_kpoints   1
+begin kpoints
+     0.000000    0.000000    0.000000  1.00
+end
+
+cell_average_cutoff  1.0E-12
+# cell_average_cutoff 1.0
+
+number_sigma_pools  2
+
+# comm_nonblocking_cyclic
+# sub_read_bcast
+# sub_read_bcast_bsize  3
+# dump_epsmat
+# pe_block_size  2
+
+# sub_collective_redistr
+
+do_sigma_subspace
+
