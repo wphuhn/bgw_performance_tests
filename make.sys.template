@@ -1,3 +1,4 @@
 MPI_CMD=mpirun -n 1
 EPS_EXE=epsilon.cplx.x
 SIG_EXE=sigma.cplx.x
+KER_EXE=kernel.cplx.x

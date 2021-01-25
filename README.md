@@ -64,8 +64,8 @@ Summit-sized nodes.
 
 * Obtain the mean-field input files and make sure that their location and MD5
   checksums are correct (see above).
-* Modify the `make.sys` file in the root directory to correspond to your local
-  environment
+* `cp make.sys.template make.sys`, then modify `make.sys` to correspond to your
+  local environment
 * `cd` into the folder for the calculation of your choice
 * `make` to run a full BerkeleyGW calculation, or `make X` to run a particular
   stage (i.e. `make sigma` to run the Sigma stage)

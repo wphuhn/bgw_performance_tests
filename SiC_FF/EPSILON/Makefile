@@ -6,5 +6,5 @@ all:  clean
 	${MPI_CMD} ${EPS_EXE}
 
 clean:
-	rm -f *.h5 *.log *.dat
+	rm -f *.h5 *.log *.dat EpsDyn EpsInvDyn
 

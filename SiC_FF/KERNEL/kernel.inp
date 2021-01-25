@@ -1,0 +1,6 @@
+use_symmetries_coarse_grid
+
+number_cond_bands 4
+number_val_bands  4
+
+screening_semiconductor
