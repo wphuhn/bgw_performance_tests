@@ -69,4 +69,5 @@ Summit-sized nodes.
 * `cd` into the folder for the calculation of your choice
 * `make` to run a full BerkeleyGW calculation, or `make X` to run a particular
   stage (i.e. `make sigma` to run the Sigma stage)
-
+    * Note: to run any stage other than EPSILON, you must first run EPSILON
+      (`make epsilon`) to generate `epsmat.h5` and `eps0mat.h5`.
