@@ -15,7 +15,7 @@ os_hdf5
 # dont_keep_fix_buffers
 # sub_collective_eigen_redistr
 
-os_opt_ffts   0
+#os_opt_ffts   0
  
 begin qpoints
      0.000000    0.000000   0.001  1.00  1
